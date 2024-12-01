@@ -27,47 +27,20 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "Arduino.h"
-/** @addtogroup Template_Project
-  * @{
-  */ 
+#include "HAL.h"
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-
-
-/* Private functions ---------------------------------------------------------*/
-
-/**
-  * @brief  Main program
-  * @param  None
-  * @retval None
-  */
 int main(void)
 {
-//  GPIO_InitTypeDef GPIO_InitStructure;
-// 
-//  /* Output SYSCLK/4 clock on MCO2 pin(PC9) ***********************************/ 
-//  /* Enable the GPIOACperipheral */ 
-//  RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);
-//  
-//  /* Configure MCO2 pin(PC9) in alternate function */
-//  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;
-//  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
-//  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
-//  GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
-//  GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;  
-//  GPIO_Init(GPIOC, &GPIO_InitStructure);
+	HAL::HAL_Init();
 	pinMode(LED_RED,OUTPUT);
   Delay_Init();
-     
+  
   /* Infinite loop */
   while (1)
   {
 //		 GPIO_ResetBits(GPIOC, GPIO_Pin_1);
 		GPIO_TOGGLE(GPIOC,GPIO_Pin_0);
+//		Serial.println("test");
 		delay_ms(111);
 
   }

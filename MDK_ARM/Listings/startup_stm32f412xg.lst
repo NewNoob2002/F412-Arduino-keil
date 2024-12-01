@@ -719,12 +719,12 @@ interwork --depend=.\objects\startup_stm32f412xg.d -o.\objects\startup_stm32f41
 ARM Macro Assembler    Page 12 
 
 
-2xg.o -I.\RTE\_Target_1 -IC:\Users\gtc\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\
-CMSIS\Core\Include -IC:\Users\gtc\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.
-15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --predefine="__EVAL SETA 1" --pr
-edefine="__UVISION_VERSION SETA 536" --predefine="_RTE_ SETA 1" --predefine="ST
-M32F412Rx SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\startup_stm32f41
-2xg.lst ..\CMSIS\Startup\arm\startup_stm32f412xg.s
+2xg.o -I.\RTE\_Target_1 -IC:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.
+0\CMSIS\Core\Include -IC:\Users\Admin\AppData\Local\Arm\Packs\Keil\STM32F4xx_DF
+P\3.0.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --predefine="__UVISION_VERSIO
+N SETA 536" --predefine="_RTE_ SETA 1" --predefine="STM32F412Rx SETA 1" --prede
+fine="_RTE_ SETA 1" --list=.\listings\startup_stm32f412xg.lst ..\CMSIS\Startup\
+arm\startup_stm32f412xg.s
 
 
 
@@ -1796,4 +1796,4 @@ Symbol: __use_two_region_memory
       None
 Comment: __use_two_region_memory unused
 3 symbols
-446 symbols in table
+445 symbols in table
