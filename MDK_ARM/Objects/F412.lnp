@@ -1,6 +1,6 @@
 --cpu=Cortex-M4.fp.sp
-".\objects\main.o"
 ".\objects\stm32f4xx_it.o"
+".\objects\main.o"
 ".\objects\system_stm32f4xx.o"
 ".\objects\startup_stm32f412xg.o"
 ".\objects\adc.o"

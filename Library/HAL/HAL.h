@@ -8,6 +8,8 @@ namespace HAL {
 	
 void HAL_Init();
 
+void HAL_HardFault_init();
+
 }
 
 
