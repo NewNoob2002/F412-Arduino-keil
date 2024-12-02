@@ -2,6 +2,7 @@
 #define __HAL_H
 
 #include <stdint.h>
+#include <stdarg.h>
 #include "../Arduino_API/Arduino.h"
 
 namespace HAL {

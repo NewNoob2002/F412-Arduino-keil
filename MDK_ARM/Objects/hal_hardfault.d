@@ -1,9 +1,19 @@
-./objects/main.o: ..\APP\main.cpp ..\APP\main.h \
-  ..\CMSIS\Device\Include\stm32f4xx.h \
-  C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h \
+./objects/hal_hardfault.o: ..\Library\HAL\HAL_HardFault.cpp \
+  ..\Library\HAL\HAL.h \
   D:\Keil\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
   D:\Keil\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
   D:\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  D:\Keil\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\APP\..\Arduino_API\Arduino.h \
+  D:\Keil\ARM\ARMCLANG\Bin\..\include\libcxx\stdlib.h \
+  D:\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  D:\Keil\ARM\ARMCLANG\Bin\..\include\libcxx\stdbool.h \
+  D:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h ..\Arduino_API\binary.h \
+  ..\Arduino_API\avr\pgmspace.h \
+  D:\Keil\ARM\ARMCLANG\Bin\..\include\libcxx\inttypes.h \
+  D:\Keil\ARM\ARMCLANG\Bin\..\include\inttypes.h ..\Core\mcu_type.h \
+  ..\CMSIS\Device\Include\stm32f4xx.h \
+  C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h \
   C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h \
   C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h \
   C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h \
@@ -33,15 +43,6 @@
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_qspi.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dfsdm.h \
-  ..\Library\HAL\HAL.h D:\Keil\ARM\ARMCLANG\Bin\..\include\stdarg.h \
-  ..\APP\..\Arduino_API\Arduino.h \
-  D:\Keil\ARM\ARMCLANG\Bin\..\include\libcxx\stdlib.h \
-  D:\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  D:\Keil\ARM\ARMCLANG\Bin\..\include\libcxx\stdbool.h \
-  D:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h ..\Arduino_API\binary.h \
-  ..\Arduino_API\avr\pgmspace.h \
-  D:\Keil\ARM\ARMCLANG\Bin\..\include\libcxx\inttypes.h \
-  D:\Keil\ARM\ARMCLANG\Bin\..\include\inttypes.h ..\Core\mcu_type.h \
   ..\Core\adc.h ..\Core\mcu_type.h ..\Core\delay.h ..\Core\exti.h \
   ..\Arduino_API\Arduino.h ..\Core\gpio.h ..\Core\pwm.h ..\Core\timer.h \
   ..\Arduino_API\WCharacter.h \
@@ -55,4 +56,6 @@
   ..\Arduino_API\WMath.h ..\Arduino_API\Tone.h ..\Arduino_API\Arduino.h \
   ..\Arduino_API\HardwareSerial.h ..\Arduino_API\Print.h \
   ..\Arduino_API\libmaple_types.h ..\Arduino_API\Printable.h \
-  ..\Arduino_API\Stream.h
+  ..\Arduino_API\Stream.h ..\Library\HAL\Version.h \
+  ..\Library\cm_backtrace\cm_backtrace.h \
+  ..\Library\cm_backtrace\cmb_def.h ..\Library\cm_backtrace\cmb_cfg.h
