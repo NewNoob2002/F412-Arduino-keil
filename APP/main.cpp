@@ -32,17 +32,13 @@
 int main(void)
 {
 	HAL::HAL_Init();
-	pinMode(LED_RED,OUTPUT);
-  Delay_Init();
+	
+  
   
   /* Infinite loop */
   while (1)
   {
-//		 GPIO_ResetBits(GPIOC, GPIO_Pin_1);
-		GPIO_TOGGLE(GPIOC,GPIO_Pin_0);
-//		Serial.println("test");
-		delay_ms(111);
-
+		HAL::HAL_Update();
   }
 }
 
