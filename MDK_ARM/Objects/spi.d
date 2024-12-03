@@ -1,9 +1,17 @@
-./objects/stm32f4xx_i2c.o: \
-  ..\Library\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_i2c.c \
-  ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h \
+./objects/spi.o: ..\Arduino_API\SPI.cpp ..\Arduino_API\SPI.h \
+  ..\Arduino_API\Arduino.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdlib.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdbool.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  ..\Arduino_API\binary.h ..\Arduino_API\avr\pgmspace.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\inttypes.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\inttypes.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h ..\Core\mcu_type.h \
   ..\CMSIS\Device\Include\stm32f4xx.h \
   C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h \
   C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h \
   C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h \
@@ -16,6 +24,7 @@
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_exti.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_gpio.h \
+  ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_iwdg.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_pwr.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_rcc.h \
@@ -31,4 +40,18 @@
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_can.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_qspi.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_fsmc.h \
-  ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dfsdm.h
+  ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_dfsdm.h \
+  ..\Core\adc.h ..\Core\mcu_type.h ..\Core\delay.h ..\Core\exti.h \
+  ..\Arduino_API\Arduino.h ..\Core\gpio.h ..\Core\pwm.h ..\Core\timer.h \
+  ..\Arduino_API\WCharacter.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\ctype.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\ctype.h \
+  ..\Arduino_API\WString.h ..\Arduino_API\dtostrf.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Arduino_API\itoa.h \
+  ..\Arduino_API\WMath.h ..\Arduino_API\Tone.h \
+  ..\Arduino_API\HardwareSerial.h ..\Arduino_API\Print.h \
+  ..\Arduino_API\libmaple_types.h ..\Arduino_API\Printable.h \
+  ..\Arduino_API\Stream.h

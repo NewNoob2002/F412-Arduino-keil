@@ -39,6 +39,7 @@
 ".\objects\wirebase.o"
 ".\objects\wmath.o"
 ".\objects\wstring.o"
+".\objects\spi.o"
 ".\objects\cm_backtrace.o"
 ".\objects\cmb_fault.o"
 ".\objects\millistaskmanager.o"

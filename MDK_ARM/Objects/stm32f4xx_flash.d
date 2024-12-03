@@ -2,12 +2,12 @@
   ..\Library\STM32F4xx_StdPeriph_Driver\src\stm32f4xx_flash.c \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_flash.h \
   ..\CMSIS\Device\Include\stm32f4xx.h \
-  C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h \
-  D:\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h \
-  C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h \
-  C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h \
-  C:\Users\guoti\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h \
+  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h \
+  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h \
+  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armclang.h \
+  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h \
   ..\CMSIS\Device\Include\system_stm32f4xx.h ..\APP\stm32f4xx_conf.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_adc.h \
   ..\Library\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_crc.h \
