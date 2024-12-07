@@ -5275,34 +5275,34 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       184          0          0          0         74       5062   adc.o
-       178          0          0          0          0      10620   arduino.o
-      2504        240       1836          0        470       9122   cm_backtrace.o
-        12          0          0          0          0        444   cmb_fault.o
-       284          0          0          0          4       5367   delay.o
-       510          0          0          0         64       8336   exti.o
-       336         52       2816          0          0       5397   gpio.o
-       212         16          4          0         16      14212   hal.o
-        98         24          0          0          0      11174   hal_hardfault.o
-       782          0         40          0        468      27809   hardwareserial.o
-        10          0          0          0          0       9971   main.o
-       206          0          0          0          0       8356   millistaskmanager.o
-       100          0          0          0          0       3408   misc.o
-       182          0          0          0          0      62812   print.o
-      1074          4          0          0          0       7145   pwm.o
-        64         26        452          0       1536        884   startup_stm32f412xg.o
-        30          0          0          0          0       2864   stm32f4xx_exti.o
-       296          0          0          0          0       4916   stm32f4xx_gpio.o
-        14          0          0          0          0        778   stm32f4xx_it.o
-       292          4         16          0          0      15019   stm32f4xx_rcc.o
-       678          0          0          0          0      27257   stm32f4xx_tim.o
-       342          0          0          0          0       8788   stm32f4xx_usart.o
-       480          6         16          4          0       3629   system_stm32f4xx.o
-       752          0          0          0         56      11424   timer.o
-      1854          0         20          0         88      19651   wire.o
+       184          0          0          0         74       5049   adc.o
+       178          0          0          0          0      10607   arduino.o
+      2504        240       1836          0        470       9116   cm_backtrace.o
+        12          0          0          0          0        424   cmb_fault.o
+       284          0          0          0          4       5334   delay.o
+       510          0          0          0         64       8303   exti.o
+       336         52       2816          0          0       5384   gpio.o
+       212         16          4          0         16      14234   hal.o
+        98         24          0          0          0      11196   hal_hardfault.o
+       782          0         40          0        468      27824   hardwareserial.o
+        10          0          0          0          0       9993   main.o
+       206          0          0          0          0       8343   millistaskmanager.o
+       100          0          0          0          0       3375   misc.o
+       182          0          0          0          0      62855   print.o
+      1074          4          0          0          0       7132   pwm.o
+        64         26        452          0       1536        864   startup_stm32f412xg.o
+        30          0          0          0          0       2851   stm32f4xx_exti.o
+       296          0          0          0          0       4903   stm32f4xx_gpio.o
+        14          0          0          0          0        758   stm32f4xx_it.o
+       292          4         16          0          0      15006   stm32f4xx_rcc.o
+       678          0          0          0          0      27244   stm32f4xx_tim.o
+       342          0          0          0          0       8775   stm32f4xx_usart.o
+       480          6         16          4          0       3596   system_stm32f4xx.o
+       752          0          0          0         56      11411   timer.o
+      1854          0         20          0         88      19666   wire.o
 
     ----------------------------------------------------------------------
-     11568        372       5232          4       2784     284445   Object Totals
+     11568        372       5232          4       2784     284243   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         94          0          0          0          8          0   (incl. Padding)
 
@@ -5438,8 +5438,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     19470        716       5786          4       2884     287121   Grand Totals
-     19470        716       5786          4       2884     287121   ELF Image Totals
+     19470        716       5786          4       2884     286919   Grand Totals
+     19470        716       5786          4       2884     286919   ELF Image Totals
      19470        716       5786          4          0          0   ROM Totals
 
 ==============================================================================
