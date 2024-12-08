@@ -12,7 +12,7 @@ class Adafruit_ST7789 : public Adafruit_GFX
 public:
     Adafruit_ST7789(
         uint8_t cs, uint8_t dc, uint8_t rst,
-        SPIClass* spix = &SPI, 
+        SPIClass* spix = &SPI_1, 
         int16_t w = ADAFRUIT_ST7789_SCREEN_WIDTH_DEFAULT, int16_t h = ADAFRUIT_ST7789_SCREEN_HEIGHT_DEFAULT
     );
     Adafruit_ST7789(

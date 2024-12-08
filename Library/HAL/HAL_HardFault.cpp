@@ -10,6 +10,8 @@ void HAL::HAL_HardFault_init()
         VERSION_SOFTWARE);
 		cm_backtrace_firmware_info();
 
+    // fault_test_by_div0();
+
 }
 
 void cm_printf(const char *__restrict __format, ...)

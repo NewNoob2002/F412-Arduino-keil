@@ -38,6 +38,19 @@
 #define MSBFIRST 1
 #endif
 
+#define SPI_I2S_GET_FLAG(SPI_I2S_FLAG) (SPIx->SR & SPI_I2S_FLAG)
+#define SPI_I2S_CLEAR_FLAG(SPI_I2S_FLAG) (SPIx->SR = (uint16_t)~SPI_I2S_FLAG;)
+#define SPI_I2S_RXDATA()               (SPIx->DR)
+#define SPI_I2S_RXDATA_VOLATILE()      volatile uint16_t vn = SPI_I2S_RXDATA()
+#define SPI_I2S_TXDATA(data)           (SPIx->DR = data)
+
+// #define SPI_I2S_GET_FLAG(spix, SPI_I2S_FLAG) (spix->sts & SPI_I2S_FLAG)
+// #define SPI_I2S_RXDATA(spix)                 (spix->dt)
+// #define SPI_I2S_RXDATA_VOLATILE(spix)        volatile uint16_t vn = SPI_I2S_RXDATA(spix)
+// #define SPI_I2S_TXDATA(spix, data)           (spix->dt = (data))
+#define SPI_I2S_WAIT_RX(spix)                do{ while (!SPI_I2S_GET_FLAG(SPI_I2S_FLAG_RXNE)); } while(0)
+#define SPI_I2S_WAIT_TX(spix)                do{ while (!SPI_I2S_GET_FLAG(SPI_I2S_FLAG_TXE)); } while(0)
+#define SPI_I2S_WAIT_BUSY(spix)              do{ while (SPI_I2S_GET_FLAG(SPI_I2S_FLAG_BSY));   } while(0)
 
 typedef enum
 {
@@ -145,15 +158,27 @@ public:
     uint8_t send(uint8_t data);
     uint8_t send(uint8_t *data, uint32_t length);
     uint8_t recv(void);
-
+    
+    SPI_TypeDef* getSPI()
+    {
+        return SPIx;
+    }
 private:
     SPI_TypeDef* SPIx;
     SPI_InitTypeDef  SPI_InitStructure;
     uint32_t SPI_Clock;
 };
 
-extern SPIClass SPI;
+#if spi_1_enable
+extern SPIClass SPI_1;
+#endif
+
+#if spi_2_enable
 extern SPIClass SPI_2;
+#endif
+
+#if spi_3_enable
 extern SPIClass SPI_3;
+#endif
 
 #endif

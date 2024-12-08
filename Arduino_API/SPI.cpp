@@ -92,6 +92,7 @@ void SPIClass::begin(void)
 
         RCC_APB2PeriphResetCmd(RCC_APB2Periph_SPI1, ENABLE);
         RCC_APB2PeriphResetCmd(RCC_APB2Periph_SPI1, DISABLE);
+				Serial.println("SPI1 Init");
     }
     else if(SPIx == SPI2)
     {
@@ -107,6 +108,7 @@ void SPIClass::begin(void)
 
         RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI2, ENABLE);
         RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI2, DISABLE);
+				Serial.println("SPI2 Init");
     }
     else if(SPIx == SPI3)
     {
@@ -122,9 +124,11 @@ void SPIClass::begin(void)
 
         RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI3, ENABLE);
         RCC_APB1PeriphResetCmd(RCC_APB1Periph_SPI3, DISABLE);
+				Serial.println("SPI3 Init");
     }
     else
     {
+				Serial.println("No SPI Init");
         return;
     }
 
@@ -292,10 +296,7 @@ void SPIClass::endTransaction(void)
     SPI_Cmd(SPIx, DISABLE);
 }
 
-#define SPI_I2S_GET_FLAG(SPI_I2S_FLAG) (SPIx->SR & SPI_I2S_FLAG)
-#define SPI_I2S_RXDATA()               (SPIx->DR)
-#define SPI_I2S_RXDATA_VOLATILE()      volatile uint16_t vn = SPI_I2S_RXDATA()
-#define SPI_I2S_TXDATA(data)           (SPIx->DR = data)
+
 
 uint16_t SPIClass::read(void)
 {
@@ -399,6 +400,6 @@ uint8_t SPIClass::recv(void)
     return this->read();
 }
 
-SPIClass SPI(SPI1);//SCK-PA5 MISO-PA6 MOSI-PA7
+SPIClass SPI_1(SPI1);//SCK-PA5 MISO-PA6 MOSI-PA7
 SPIClass SPI_2(SPI2);//SCK-PB13 MISO-PB14 MOSI-PB15
 SPIClass SPI_3(SPI3);//SCK-PB3 MISO-PB4 MOSI-PB5

@@ -368,9 +368,9 @@ void Adafruit_ST7789::fillScreen(uint16_t color)
             SPI_I2S_TXDATA(SPIx, color >> 8);
 #else
             SPI_I2S_WAIT_TX(SPIx);
-            SPI_I2S_TXDATA(SPIx, color >> 8);
+            SPIx->DR=color>>8;
             SPI_I2S_WAIT_TX(SPIx);
-            SPI_I2S_TXDATA(SPIx, color);
+            SPIx->DR=color;
 #endif
         }
         SPI_I2S_WAIT_TX(SPIx);
@@ -408,9 +408,9 @@ void Adafruit_ST7789::drawFastRGBBitmap(int16_t x, int16_t y, uint16_t *bitmap, 
             bitmap++;
 #else
             SPI_I2S_WAIT_TX(SPIx);
-            SPI_I2S_TXDATA(SPIx, *bitmap >> 8);
+            SPIx->DR=*bitmap>>8;
             SPI_I2S_WAIT_TX(SPIx);
-            SPI_I2S_TXDATA(SPIx, *bitmap++);
+            SPIx->DR=*bitmap;
 #endif
         }
         SPI_I2S_WAIT_TX(SPIx);

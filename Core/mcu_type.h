@@ -3,6 +3,7 @@
 
 #include "stm32f4xx.h"
 #include "stm32f4xx_conf.h"
+#include <mcu_config.h>
 
 #define __STM32__
 #define __STM32F4__

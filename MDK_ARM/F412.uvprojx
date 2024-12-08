@@ -52,7 +52,7 @@
           <OutputName>F412</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
@@ -337,9 +337,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_STDPERIPH_DRIVER,STM32F412xG</Define>
+              <Define>USE_STDPERIPH_DRIVER,STM32F412xG,ARDUINO=111</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CMSIS\Include;..\CMSIS\Device\Include;..\APP;..\Library\STM32F4xx_StdPeriph_Driver\inc;..\Core;..\Library;..\Arduino_API;..\Arduino_API\avr;..\Library\cm_backtrace;..\Library\cm_backtrace\Languages\zh-CN;..\Library\HAL</IncludePath>
+              <IncludePath>..\CMSIS\Include;..\CMSIS\Device\Include;..\APP;..\Library\STM32F4xx_StdPeriph_Driver\inc;..\Core;..\Library;..\Arduino_API;..\Arduino_API\avr;..\Library\cm_backtrace;..\Library\cm_backtrace\Languages\zh-CN;..\Library\HAL;..\CMSIS;..\Library\Adafruit_ST7789;..\Library\Adafruit_GFX_Library</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -709,6 +709,16 @@
               <FileType>8</FileType>
               <FilePath>..\Library\MillisTaskManager\MillisTaskManager.cpp</FilePath>
             </File>
+            <File>
+              <FileName>Adafruit_ST7789.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Library\Adafruit_ST7789\Adafruit_ST7789.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>Adafruit_GFX.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Library\Adafruit_GFX_Library\Adafruit_GFX.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -774,6 +784,11 @@
               <FileName>HAL_HardFault.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\Library\HAL\HAL_HardFault.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>HAL_Dispaly.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Library\HAL\HAL_Dispaly.cpp</FilePath>
             </File>
           </Files>
         </Group>
